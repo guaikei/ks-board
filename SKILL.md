@@ -6,6 +6,11 @@ name: ks-board
 description: "快手作品榜单数据源（只读）：关键词搜视频、博主作品与粉丝数据、视频评论，输出 JSON，不登录不发布。触发词：快手、Kuaishou、kwai、快手搜索、快手评论、快手博主。用户要查快手视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "快手作品榜单｜爆款排行·高赞清单·热门博主·数据对比"
+display_name_en: "Kuaishou Rankings"
+description_zh: "快手作品榜单数据源（只读）：关键词搜索快手视频（综合/最新/最多点赞排序，近 1 日/7 日/1 月时间窗与时长筛选）、博主作品列表与粉丝/获赞/关注互动数据（主页链接或纯数字 user_id，--limit 0 只取账号信息）、视频评论抓取；全部以结构化 JSON 输出供 AI 直接排序对比。不登录、不发布、不点赞、不评论，仅处理快手公开数据。按量单次最多 1 万条；包月搜索最多 30、作品最多 50、评论最多 60，超限返回 PLAN_LIMIT（退出码 1），禁止同参重试。适用于爆款排行、高赞作品清单、热门博主盘点、同类内容数据对比、竞品监控与评论舆情。"
+description_en: "Read-only Kuaishou ranking data source: keyword video search with relevance/latest/most-liked sorting plus time-window (1 day/7 days/1 month) and duration filters, creator video lists with fan/like/follow engagement data via profile link or numeric user id (limit 0 returns account info only), and video comment mining. All results are structured JSON ready for direct AI comparison. No login, publishing, liking, or commenting; only public Kuaishou data is processed. Pay-per-use runs cap at 10,000 items; monthly plans cap searches at 30, creator videos at 50, and comments at 60, with PLAN_LIMIT (exit code 1) on overage — never retry with the same arguments. Ideal for hit rankings, top-liked lists, popular creator reviews, content benchmarking, competitor monitoring, and comment sentiment."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "📷"
